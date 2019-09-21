@@ -27,6 +27,5 @@ systemctl enable ngrok.service
 systemctl start ngrok.service
 systemctl status ngrok.service
 
-cd /opt/ngrok/
-./delsetup.sh
 cd ~/
+bash /opt/ngrok/delsetup.sh
