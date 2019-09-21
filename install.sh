@@ -25,4 +25,4 @@ systemctl enable ngrok.service
 systemctl start ngrok.service
 systemctl status ngrok.service
 cd ~/
-rm -rf ~/ngrok-setup/
+rm -rf ~/ngrok-setup
