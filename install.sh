@@ -19,7 +19,6 @@ unzip ngrok-stable-linux-arm.zip
 cp ngrok /opt/ngrok/
 chmod +x /opt/ngrok/ngrok
 cp uninstall.sh /opt/ngrok/
-cp delsetup.sh /opt/ngrok/
 cp ngrok.service /lib/systemd/system/
 cp ngrok.yml /opt/ngrok/
 sed -i "s/<add_your_token_here>/$1/g" /opt/ngrok/ngrok.yml
@@ -29,4 +28,3 @@ systemctl start ngrok.service
 systemctl status ngrok.service
 
 cd ~/
-bash /opt/ngrok/delsetup.sh
